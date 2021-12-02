@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0e389a485a.js" crossorigin="anonymous"></script>
+    <title>Contacto</title>
+</head>
+<body>
+    <header><a href="../index.html"> Volver al Home</a>
+        <nav>
+            <ul class="menu">
+                <li class="menu__item"><a href="quienes_somos.html">Quienes somos</a></li> 
+                <li class="menu__item"><a href="nuestros_destinos.html">Nuestros Destinos</a></li> 
+                <li class="menu__item"><a href="proximas_salidas.html">Proximas Salidas</a></li> 
+                <li class="menu__item"><a href="galeria_fotos.html">Galeria de Fotos</a></li> 
+                <li class="menu__item"><a href="contacto.html">Contacto</a></li> 
+                <li class="menu__item"><img class="imagenChica" src="../imagenes/logo.png" alt="logo"></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Formulario de Contacto</h1>
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <form action="Contacto.php" method="GET" enctype="application/x-www-form-urlencoded">
+                <div><label for="nombre_apellido" >Nombre y Apellido:</label></div>
+                <div ><input class="bordesRedondeados" type="nombre"; name="nombre_apellido" /></div>
+                <div><label for="correo_electronico">E-mail:</label></div>
+                <div><input class="bordesRedondeados" type="email"; name="correo_electronico" /></div>
+                <textarea class="bordesRedondeados" rows="10" cols="30" name="consulta" placeholder="Escriba su consulta"></textarea>
+                <div>
+                    <input class="bordesRedondeados" type="submit" value="Enviar formulario"/>
+                    <input class="bordesRedondeados" type="reset" value="Limpiar formulario"/>
+                    <input class="bordesRedondeados" type="button" value="Sin acciones"/>
+                </div>   
+            </form>
+          </div>
+          <div class="col">
+            <section>
+                <i class="fab fa-whatsapp"></i>
+                <p>+54 9 3416022115</p>
+            </section>
+            <section>
+                <i class="fab fa-instagram imagenMini"></i>
+                <p>@aventurasserranasok</p>
+            </section>
+            <section>
+                <i class="fab fa-facebook-square"></i>
+                <p>Aventuras Serranas</p>
+            </section>
+            <section>
+                <p>Encontranos en Shooping Paseo del Siglo, Rosario</p>
+                <img src="../imagenes/ubicacion.jpg" alt="ubicacion">
+            </section>
+        </div>
+      </div>
+    <footer class="footerGrid centrar">
+        <p>Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
