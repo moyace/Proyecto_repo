@@ -1,0 +1,70 @@
+.padreGrid {display:grid;
+    grid-template-areas: 
+    "header header header"
+    "historia historia icono"
+    "imagen texto texto"
+    "footer footer footer";
+    grid-template-rows: 10rem 18rem 18rem auto;
+    grid-template-columns: 30% auto 30rem;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;}
+.bordeGrid { border: 2px solid black;}
+.headerGrid {grid-area: header;}
+.footerGrid {grid-area: footer;}
+.sectionHistoria {grid-area: historia;}
+.sectionIcono {grid-area:icono;
+               width: 30rem;
+               align-content: left;}
+.sectionImagen {grid-area:imagen;
+                width: 100%;}
+.sectionTexto {grid-area:texto;}
+
+.indexGrid {display:grid;
+grid-template-areas: 
+"header header"
+"texto texto"
+"imagen1 imagen2"
+"footer footer";
+grid-template-rows: 20rem 18rem auto;
+grid-template-columns: 50% 50%;
+grid-row-gap: 5px;
+grid-column-gap: 5px;}
+.div1 {grid-area: imagen1}
+.div2 {grid-area: imagen2}
+
+.destinosGrid {display:grid;
+    grid-template-areas: 
+    "header header"
+    "cardSierras cardChampa"
+    "cardGigantes cardCumbre"
+    "footer footer";}
+    .sectionSierras {grid-area: cardSierras;}
+    .sectionChampa {grid-area: cardChampa;}
+    .sectionGigantes {grid-area: cardGigantes;}
+    .sectionCumbre {grid-area: cardCumbre;}
+    .footerDestinos {grid-area:footer}
+
+.galeriaGrid {display:grid;
+grid-template-areas: 
+"header header header header"
+"img1 img2 img3 img4"
+"img5 img6 img7 img8"
+"img9 img10 img11 img12"
+"footer footer footer footer";
+grid-template-rows: 10rem 27% 27% 27% auto;
+grid-template-columns: 25% auto 25% 25%;
+grid-row-gap: 5px;
+grid-column-gap: 5px;}
+.divImg1 {grid-area: img1;}
+.divImg2 {grid-area: img2;}
+.divImg3 {grid-area: img3;}
+.divImg4 {grid-area: img4;}
+.divImg5 {grid-area: img5;}
+.divImg6 {grid-area: img6;}
+.divImg7 {grid-area: img7;}
+.divImg8 {grid-area: img8;}
+.divImg9 {grid-area: img9;}
+.divImg10 {grid-area: img10;}
+.divImg11 {grid-area: img11;}
+.divImg12 {grid-area: img12;}
+.footerGaleria {grid-area: footer;}

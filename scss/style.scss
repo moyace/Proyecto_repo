@@ -1,0 +1,68 @@
+*{margin:0%;
+  padding: 0%;}
+
+@import "colores";
+@import "grid";
+@import "mediaquery";
+
+  
+  .bordesRedondeados {border-radius: 10px;}
+  .italica {font-style: italic}
+  .negrita {font-weight: bold}
+  .centrar {text-align: center;}
+  .textoGrande {font-size: 400%;}
+  .imagenChica {width: 100px; height: auto}
+  .imagenMini {width: 50px; height: auto}
+  .imagenGrande {width: 300px; height: 300px}
+  .achicar {height: 30rem;}
+  .centrarImg {position: relative;}
+  .tarjetas {height: 200px; width: auto;overflow:auto;}
+  .derecha {margin-left: auto;}
+
+  #galeria .col-lg-4 {padding: 25px;}
+  #galeria img{width: 100%;
+               height: 250px;}
+  #galeria img:hover {
+          border: 2px solid white;
+  }
+ 
+       
+  .padre {flex-wrap: nowrap;
+          flex-direction: row;
+          display:flex;
+          justify-content:center}
+  .padreDestinos { display: flex;
+                   height: 600px;
+                   flex-direction: column;
+                  padding: 1em;}
+  .calendario {display: flex;
+              flex-flow: column nowrap;
+              background-color: #3c3c3c;
+              justify-content: space-around;
+              width: 300px;
+              height: 300px;
+              margin: 15px;}
+  .calendario__detallado {background-color:  wheat;
+         padding: 4px;
+         margin: 5px;
+         flex:1}
+  .imagenInicio {margin: 5px 10px 20px 15px;
+                 width: 100vh}
+  .textoInicio {border: solid 5px white;
+                padding: 5px}
+  .lista {float:inline-start;
+          padding: 10px}
+
+.menu {list-style-type:none;
+    display: flex;
+    margin:0%;
+    padding:0%;
+    justify-content: center}
+  
+  span{
+          height: 100px;
+          transition: height 2s;}
+  span:hover {
+          height: 200px;}
+  
+  footer {margin-top: 10em;}
