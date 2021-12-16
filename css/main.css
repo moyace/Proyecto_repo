@@ -1,0 +1,337 @@
+* {
+  margin: 0%;
+  padding: 0%; }
+
+h2, h3, h4, h6, footer, p, li, section, label {
+  color: white;
+  font-family: 'Roboto' , sans-serif; }
+
+.textoNegro {
+  color: black; }
+
+h1 {
+  font-family: 'Lobster', cursive;
+  color: white;
+  animation-duration: 2s;
+  animation-name: aparecer; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+a {
+  color: white;
+  font-family: 'Lobster', cursive; }
+
+.menu__item {
+  padding: 3rem;
+  color: red; }
+
+body {
+  background-color: black; }
+
+.padreGrid {
+  display: grid;
+  grid-template-areas: "header header header" "historia historia icono" "imagen texto texto" "footer footer footer";
+  grid-template-rows: 10rem 18rem 18rem auto;
+  grid-template-columns: 30% auto 30rem;
+  grid-row-gap: 5px;
+  grid-column-gap: 5px; }
+
+.bordeGrid {
+  border: 2px solid black; }
+
+.headerGrid {
+  grid-area: header; }
+
+.footerGrid {
+  grid-area: footer; }
+
+.sectionHistoria {
+  grid-area: historia; }
+
+.sectionIcono {
+  grid-area: icono;
+  width: 30rem;
+  align-content: left; }
+
+.sectionImagen {
+  grid-area: imagen;
+  width: 100%; }
+
+.sectionTexto {
+  grid-area: texto; }
+
+.indexGrid {
+  display: grid;
+  grid-template-areas: "header header" "texto texto" "imagen1 imagen2" "footer footer";
+  grid-template-rows: 20rem 18rem auto;
+  grid-template-columns: 50% 50%;
+  grid-row-gap: 5px;
+  grid-column-gap: 5px; }
+
+.div1 {
+  grid-area: imagen1; }
+
+.div2 {
+  grid-area: imagen2; }
+
+.destinosGrid {
+  display: grid;
+  grid-template-areas: "header header" "cardSierras cardChampa" "cardGigantes cardCumbre" "footer footer"; }
+
+.sectionSierras {
+  grid-area: cardSierras; }
+
+.sectionChampa {
+  grid-area: cardChampa; }
+
+.sectionGigantes {
+  grid-area: cardGigantes; }
+
+.sectionCumbre {
+  grid-area: cardCumbre; }
+
+.footerDestinos {
+  grid-area: footer; }
+
+.galeriaGrid {
+  display: grid;
+  grid-template-areas: "header header header header" "img1 img2 img3 img4" "img5 img6 img7 img8" "img9 img10 img11 img12" "footer footer footer footer";
+  grid-template-rows: 10rem 27% 27% 27% auto;
+  grid-template-columns: 25% auto 25% 25%;
+  grid-row-gap: 5px;
+  grid-column-gap: 5px; }
+
+.divImg1 {
+  grid-area: img1; }
+
+.divImg2 {
+  grid-area: img2; }
+
+.divImg3 {
+  grid-area: img3; }
+
+.divImg4 {
+  grid-area: img4; }
+
+.divImg5 {
+  grid-area: img5; }
+
+.divImg6 {
+  grid-area: img6; }
+
+.divImg7 {
+  grid-area: img7; }
+
+.divImg8 {
+  grid-area: img8; }
+
+.divImg9 {
+  grid-area: img9; }
+
+.divImg10 {
+  grid-area: img10; }
+
+.divImg11 {
+  grid-area: img11; }
+
+.divImg12 {
+  grid-area: img12; }
+
+.footerGaleria {
+  grid-area: footer; }
+
+@media only screen and (max-width: 767px) {
+  .menu {
+    display: grid;
+    grid-template-columns: auto auto;
+    flex-direction: column;
+    width: 100%; }
+  .padreGrid {
+    grid-template-columns: 50% auto; }
+  .headerGrid {
+    width: 100%;
+    grid-template-columns: 50% auto; }
+  .menu__item {
+    height: auto;
+    padding: 2px;
+    font-size: xx-small; }
+  h1 {
+    margin: 0%;
+    width: 300px; }
+  input {
+    color: white; }
+  .sectionIcono {
+    width: 100px; }
+  .sectionImagen {
+    width: 100px; }
+  .logo {
+    width: 100px; }
+  .card-text {
+    font-size: x-small; }
+  .textoChico {
+    font-size: small; }
+  .card {
+    margin: 30px 0px 30px 30px; }
+  .col-sm-4 {
+    padding: 5px; } }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .menu {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% auto; }
+  body {
+    width: auto; }
+  .padreGrid {
+    grid-template-columns: 50% auto; }
+  .headerGrid {
+    width: 100%;
+    grid-template-columns: 50% auto; }
+  h1 {
+    margin: 0px 0px 15px 0px;
+    width: 750px;
+    text-align: center;
+    margin-right: 0%; }
+  .menu__item {
+    height: auto;
+    padding: 5px; }
+  .sectionIcono {
+    width: 300px; }
+  .logo {
+    width: 200px;
+    float: initial; }
+  .container {
+    margin: 0%; }
+  .col-sm-4 {
+    padding: 15px; } }
+
+@media only screen and (min-width: 992px) and (max-width: 1440px) {
+  .menu {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% auto; }
+  .col-sm-4 {
+    padding: 15px; }
+  a {
+    font-size: large; } }
+
+.bordesRedondeados {
+  border-radius: 10px; }
+
+.italica {
+  font-style: italic; }
+
+.negrita {
+  font-weight: bold; }
+
+.centrar {
+  text-align: center; }
+
+.textoGrande {
+  font-size: 400%; }
+
+.imagenChica {
+  width: 100px;
+  height: auto; }
+
+.imagenMini {
+  width: 50px;
+  height: auto; }
+
+.imagenGrande {
+  width: 300px;
+  height: 300px; }
+
+.achicar {
+  height: 30rem; }
+
+.centrarImg {
+  position: relative; }
+
+.derecha {
+  margin-left: auto; }
+
+.card-text {
+  color: black; }
+
+.card-title {
+  color: black;
+  font-weight: bold; }
+
+.card {
+  margin: 30px;
+  padding: 0%;
+  border: black; }
+
+.tarjetas {
+  height: 200px;
+  width: auto;
+  overflow: auto; }
+
+#galeria .col-lg-4 {
+  padding: 25px; }
+
+#galeria img {
+  width: 100%;
+  height: 250px; }
+
+#galeria img:hover {
+  border: 2px solid white; }
+
+.padre {
+  flex-wrap: nowrap;
+  flex-direction: row;
+  display: flex;
+  justify-content: center; }
+
+.padreDestinos {
+  display: flex;
+  height: 600px;
+  flex-direction: column;
+  padding: 1em; }
+
+.calendario {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #3c3c3c;
+  justify-content: space-around;
+  width: 300px;
+  height: 300px;
+  margin: 15px; }
+
+.calendario__detallado {
+  background-color: wheat;
+  padding: 4px;
+  margin: 5px;
+  flex: 1; }
+
+.imagenInicio {
+  margin: 5px 10px 20px 15px;
+  width: 100vh; }
+
+.textoInicio {
+  border: solid 5px white;
+  padding: 5px; }
+
+.lista {
+  float: inline-start;
+  padding: 10px; }
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  margin: 0%;
+  padding: 0%;
+  justify-content: center; }
+
+span {
+  height: 100px;
+  transition: height 2s; }
+
+span:hover {
+  height: 200px; }
+
+footer {
+  margin-top: 10em; }

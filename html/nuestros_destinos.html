@@ -1,99 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>Destinos</title>
-</head>
-<body>
-    <div class="destinosGrid">
-        <header class="headerGrid"> 
-            <a href="../index.html"> Volver al Home</a>
-            <ul class="menu">
-                <li class="menu__item"><a href="quienes_somos.html">Quienes somos</a></li> 
-                <li class="menu__item"><a href="nuestros_destinos.html">Nuestros Destinos</a></li> 
-                <li class="menu__item"><a href="proximas_salidas.html">Proximas Salidas</a></li> 
-                <li class="menu__item"><a href="galeria_fotos.html">Galeria de Fotos</a></li> 
-                <li class="menu__item"><a href="contacto.html">Contacto</a></li> 
-                <li class="menu__item"><img class="imagenChica" src="../imagenes/logo.png" alt="logo"></li>
-            </ul>
-            <h1>Nuestros destinos</h1>            
-        </header>
-        <section class="sectionSierras" >
-            <div class="card mb-3 tarjetas" style="max-width: 600px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="../imagenes/sierrasCard.jpg" class="img-fluid rounded-start tarjetas" alt="sierras">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body ">
-                      <h5 class="card-title textoNegro negrita">Sierras embrujadas</h5>
-                      <p class="card-text textoNegro">Sierras Embrujadas es el nombre de un refugio de montaña ubicado en el corazón de las Sierras Grandes. Durante el ascenso, es inevitable volver la vista hacia atrás para admirar la belleza del Valle de Traslasierras y el imponente espejo del Dique de la Viña.
-                        El sendero que conduce al refugio se encuentra bien delimitado, pero se recomienda transitarlo con un prestador habilitado, ya que al ser una senda de montaña, requiere de algunos recaudos. El recorrido es de unas tres horas de duración, considerando ascenso y regreso.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
-        </section>
-        <section class="sectionChampa">
-            <div class="card mb-3 tarjetas" style="max-width: 600px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="../imagenes/champaCard.jpg" class="img-fluid rounded-start tarjetas" alt="Cerro Champaqui">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title textoNegro negrita">Champaqui</h5>
-                      <p class="card-text textoNegro">Su cumbre alcanza los 2790 msnm y es la más alta de Córdoba. Durante el camino es posible visualizar flora nativa, como los árboles de Tabaquillo y Maytén, además de arroyos prístinos, formaciones graníticas y extensos valles. Desde la cima, se puede observar: el Valle de Traslasierras (al oeste) y el Valle de Calamuchita (al este).</p>
-                    </div>
-                  </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <title>Destinos</title>
+</head>
+
+<body>
+  <div>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../imagenes/logo.png" alt="logo" width="100" height="100" class="d-inline-block align-text-top">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto derecha">
+              <li class="nav-item">
+                <a class="nav-link" href="quienes_somos.html">Quienes somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nuestros_destinos.html">Nuestros destinos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="proximas_salidas.html">Proximas salidas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="galeria_fotos.html">Galeria de fotos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <h1 class="centrar">Nuestros destinos</h1>
+    </header>
+    <section class="container-fluid">
+      <div class="row">
+        <div class="col-lg">
+          <div class="card mb-3 tarjetas" style="max-width: 600px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../imagenes/sierrasCard.jpg" class="img-fluid rounded-start tarjetas sticky-top container-fluid"
+                  alt="sierras">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body ">
+                  <h5 class="card-title">Sierras embrujadas</h5>
+                  <p class="card-text">Sierras Embrujadas es el nombre de un refugio de montaña ubicado en el corazón de
+                    las
+                    Sierras Grandes. Durante el ascenso, es inevitable volver la vista hacia atrás para admirar la
+                    belleza
+                    del Valle de Traslasierras y el imponente espejo del Dique de la Viña.
+                    El sendero que conduce al refugio se encuentra bien delimitado, pero se recomienda transitarlo con
+                    un
+                    prestador habilitado, ya que al ser una senda de montaña, requiere de algunos recaudos. El recorrido
+                    es
+                    de unas tres horas de duración, considerando ascenso y regreso.</p>
                 </div>
               </div>
-        </section>
-        <section class="sectionGigantes">
-            <div class="card mb-3 tarjetas" style="max-width: 600px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="../imagenes/gigantesCard.jpg" class="img-fluid rounded-start tarjetas" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title textoNegro negrita">Los Gigantes</h5>
-                      <p class="card-text textoNegro">Los Gigantes pertenecen al extremo norte de las Sierras Grandes. La formación se remonta a 300 y 350 millones de años atrás. El macizo es atractivo por las grandes piedras graníticas, que generan siluetas de incontables formas. Un laberinto que puede desorientar hasta al más aventurero, si no camina con mucha atención. Siendo uno de los centros de escalada en roca más importantes del país, sus paredes poseen unas 400 rutas equipadas de escalada deportiva.</p>
-                    </div>
-                  </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg">
+          <div class="card mb-3 tarjetas" style="max-width: 600px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../imagenes/champaCard.jpg" class="img-fluid rounded-start tarjetas sticky-top container-fluid"
+                  alt="Cerro Champaqui">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Champaqui</h5>
+                  <p class="card-text">Su cumbre alcanza los 2790 msnm y es la más alta de Córdoba. Durante el camino es
+                    posible visualizar flora nativa, como los árboles de Tabaquillo y Maytén, además de arroyos
+                    prístinos,
+                    formaciones graníticas y extensos valles. Desde la cima, se puede observar: el Valle de
+                    Traslasierras
+                    (al oeste) y el Valle de Calamuchita (al este).</p>
                 </div>
               </div>
-        </section>
-        <section class="sectionCumbre">
-            <div class="card mb-3 tarjetas" style="max-width: 600px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="../imagenes/cumbreCard.jpg" class="img-fluid rounded-start tarjetas" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title textoNegro negrita">La Cumbrecita</h5>
-                      <p class="card-text textoNegro">La Cumbrecita se encuentra en un pequeño valle de las Sierras Grandes de Córdoba, a 1450 msnm. Un rosario de casas de estilo centroeuropeo concentradas a la vera de los senderos que atraviesan el bosque. Visitar nuestro pueblo es ingresar a un refugio de tranquilidad, donde la naturaleza y la mano del hombre han logrado mantener el equilibrio. Gracias a esto, La Cumbrecita y sus alrededores fueron declarados RESERVA NATURAL DE USO MULTIPLE (ley provincial Nª 8476), siendo nuestro pueblo el centro de este gran ecosistema y el principal guardián de la diversidad que en él habita.</p>
-                    </div>
-                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg">
+          <div class="card mb-3 tarjetas" style="max-width: 600px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../imagenes/gigantesCard.jpg" class="img-fluid rounded-start tarjetas sticky-top container-fluid" alt="Los Gigantes">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Los Gigantes</h5>
+                  <p class="card-text">Los Gigantes pertenecen al extremo norte de las Sierras Grandes. La formación se
+                    remonta a 300 y 350 millones de años atrás. El macizo es atractivo por las grandes piedras
+                    graníticas,
+                    que generan siluetas de incontables formas. Un laberinto que puede desorientar hasta al más
+                    aventurero,
+                    si no camina con mucha atención. Siendo uno de los centros de escalada en roca más importantes del
+                    país,
+                    sus paredes poseen unas 400 rutas equipadas de escalada deportiva.</p>
                 </div>
               </div>
-        </section>
-        <footer class="footerDestinos centrar">
-            <p>Todos los derechos reservados</p>
-        </footer>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg">
+          <div class="card mb-3 tarjetas" style="max-width: 600px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../imagenes/cumbreCard.jpg" class="img-fluid rounded-start tarjetas sticky-top container-fluid"
+                  alt="La cumbrecita">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">La Cumbrecita</h5>
+                  <p class="card-text">La Cumbrecita se encuentra en un pequeño valle de las Sierras Grandes de Córdoba,
+                    a
+                    1450 msnm. Un rosario de casas de estilo centroeuropeo concentradas a la vera de los senderos que
+                    atraviesan el bosque. Visitar nuestro pueblo es ingresar a un refugio de tranquilidad, donde la
+                    naturaleza y la mano del hombre han logrado mantener el equilibrio. Gracias a esto, La Cumbrecita y
+                    sus
+                    alrededores fueron declarados RESERVA NATURAL DE USO MULTIPLE (ley provincial Nª 8476), siendo
+                    nuestro
+                    pueblo el centro de este gran ecosistema y el principal guardián de la diversidad que en él habita.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+  <footer class="container-fluid centrar">
+    <p>Todos los derechos reservados</p>
+  </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

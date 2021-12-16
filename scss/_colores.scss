@@ -1,19 +1,19 @@
 $color-blanco : white;
-$color-manteca : wheat;
 $color-negro: black;
 
-h2, h3, h4, h6, footer, p, li, section, label {color: $color-manteca }
+h2, h3, h4, h6, footer, p, li, section, label {color: $color-blanco; font-family:'Roboto' , sans-serif}
 .textoNegro {color:$color-negro}
 
-h1 {color:$color-blanco;
+h1 {font-family: 'Lobster', cursive;
+    color:$color-blanco;
    animation-duration: 2s;
    animation-name: aparecer;}
    @keyframes aparecer {0% {opacity: 0;}
    100% {opacity: 1;}}
-a   {color: $color-blanco}
+a   {color: $color-blanco;font-family: 'Lobster', cursive }
 
 .menu__item {padding: 3rem;
     color:red}
 
-body    {font-family:'Roboto' , sans-serif;
+body    {
         background-color: black;}
